@@ -1,0 +1,71 @@
+<HTML>
+<HEAD>
+
+    <TITLE>답변</TITLE>
+    <script type="text/javascript">
+        function move(url) {
+            location.href = url;
+        }
+        function boardReplyCheck() {
+            var form = document.BoardWriteForm;
+            return true;
+        }
+    </script>
+</HEAD>
+
+<BODY>
+    <table summary="전체 테이블 구성">
+        <tr>
+            <td bgcolor="#dcdcdc" height="25" align="center">답변달기</td>
+        </tr>
+    </table>
+
+    <table summary="답변 테이블 구성">
+        <form name="ReplyForm" method="post" action="reply_action.htm"
+              onsubmit="return boardReplyCheck();">
+
+            <tr>
+                <td>
+                    <table border="0" width="100%" align="center">
+                        <tr>
+                            <td align="center" width="80">작성자</td>
+                            <td><input type=text name=user size=10 maxlength=8></td>
+                        </tr>
+                        <tr>
+                            <td align="center">E-Mail</td>
+                            <td><input type=text name=email size=30 maxlength="30"></td>
+                        </tr>
+                        <tr>
+                            <td align="center">홈페이지</td>
+                            <td><input type=text name=homepage size=40 maxlength="30"></td>
+                        </tr>
+                        <tr>
+                            <td width=10% align="center">제 목</td>
+                            <td width="50%"><input type=text name=header size="50" maxlength="30" value="RE: 게시판 글쓰기 입니다."></td>
+                        </tr>
+                        <tr>
+                            <td width="10%" align="center">내 용</td>
+                            <td><textarea name=content rows="10" cols="70"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td width="10%" align="center">비밀 번호</td>
+                            <td width="70%"><input type="password" name="password" size="15" maxlength="15"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><hr size="2"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" align="center">
+                                <input type="submit" value="답변 등록" class="btn">
+                                <input type="button" vlaue="뒤로가기" onclick="history.go(-1)">
+                            </td>
+                        </tr>
+                    </table> 
+                </td>
+            </tr>
+
+
+        </form>
+    </table>
+</BODY>
+</HTML>

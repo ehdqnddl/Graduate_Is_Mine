@@ -1,0 +1,64 @@
+<html>
+<head>
+    <title>글 읽기</title>
+    <script type="text/javascript">
+        function move(url) {
+            location.href = url;
+        }
+        function boardViewCheck() {
+            var form = document.BoardViewForm;
+            return true;
+        }
+    </script>
+</head>
+
+<body>
+    <form name="ViewForm" method="post">
+        <table summary="전체 테이블 구성" width="100%" height="200">
+            <tr>
+                <td><div align="center"><h3><b>글 읽기</b></h3></div></td>
+            </tr>
+            <tr>
+                <td colspan=2>
+                    <table border="1" summary="목록 테이블 구성" wdith="100%" height="200">
+                        <tr>
+                            <td align=center bgcolor=#dddddd width="15%"> 작성자</td>
+                            <td bgcolor=#ffffe8 width="50%">서현석</td>
+                            <td align=center bgcolor=#dddddd width="15%"> 작성일</td>
+                            <td bgcolor=#ffffe8 width="50%">2016/12/21</td>
+                        </tr>
+                        <tr>
+                            <td align=center bgcolor=#dddddd width="15%"> E-mail </td>
+                            <td bgcolor=#ffffe8 width="50%">hunsug42@naver.com</td>
+                            <td align=center bgcolor=#dddddd width="15%"> 홈페이지 </td>
+                            <td bgcolor=#ffffe8 width="50%"><a href="http://www.naver.com" target="_new">www.naver.com</a></td>
+                        </tr>
+                        <tr>
+                            <td align=center bgcolor=#dddddd> 제 목</td>
+                            <td bgcolor=#ffffe8 colspan=3> 교수님이 너무 잘가르쳐요</td>
+                        </tr>
+                        <tr>
+                            <td colspan=4><br>우리학교 스타강사 xxx교수님입니다. 과제는 매 주 나오는데 시간을 많이 잡아먹는 그런 어려운 과제는 아니고 수업시간 내용만으로 쉽게 풀 수 있는 과제들 위주로 나와요. 재미는 물론 뭔가 배워가는게 있는 좋은 수업입니다.<br></td>
+                        </tr>
+                        <tr>
+                            <td colspan=4 align=right> <b><font color="red">4</font> <font color="blue">0</font></b> 조회수  : 31</td>
+                        </tr>
+                    </table>
+            </td>
+            </tr>
+            <tr>
+                <td align=center colspan=2>
+                    <hr size=1>
+                    <div align="center">
+                        [ <input type="button" value="목록" onclick="move('main.htm');"> |
+                        <input type="button" value="수정" onclick="move('update.htm');"> |
+                        <input type="button" value="답변" onclick="move('reply.htm');"> |
+                        <input type="button" value="삭제" onclick="move('delete.htm');">]<br>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<HTML>
+<HEAD>
+
+<TITLE>글쓰기</TITLE>
+ <script type="text/javascript">
+     function move(url) {
+         location.href = url;
+     }
+     function boardWriteCheck() {
+         var form = document.BoardWriteForm;
+         return true;
+     }
+ </script>
+</HEAD>
+
+<BODY>
+    <table summary="글쓰기 전체 테이블">
+        <form name="WritingForm" method="post" action="writing_action.htm"
+              onsubmit="return boardWriteCheck();">
+            <colgroup>
+                <col width="20%">
+                <col width="80%">
+            </colgroup>
+        <table summary="테이블 구성">
+        <caption>게시판 글쓰기</caption>
+            <tr>
+                <td width="80">작성자</td>
+                <td><input type=text name=user size=10 maxlength=8 ></td>
+            </tr>
+            <tr>
+                <td>E-Mail</td>
+                <td><input type=text name=email size=30></td>
+            </tr>
+            <tr>
+                <td>홈페이지</td>
+                <td><input type=text name=homepage size=30></td>
+            </tr>
+            <tr>
+                <td>제 목</td>
+                <td><input type=text name=header></td>
+            </tr>
+            <tr>
+                <td>내 용</td>
+                <td><textarea name=content rows="10" cols="100"></textarea></td>
+            </tr>
+            <tr>
+                <td>비밀번호</td>
+                <td><input type="password" name="password" size="15" maxlength="15"></td>
+            </tr>
+            <tr>
+                <td colspan=2><hr size=1></td>
+            </tr>
+            <tr>
+                <td colspan=2> <div align="center">
+                    <input type="submit" value="등록" >
+                    <input type="button" value="뒤로" onclick="move('main.htm');"></div>
+                
+                </td>
+            </tr>
+        </table>
+        </form>
+    </table>
+
+
+</BODY>
+</HTML>

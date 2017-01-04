@@ -1,0 +1,85 @@
+
+<HTML>
+<HEAD>
+    <TITLE>게시판 목록</TITLE>
+
+    <script type="text/javascript">
+       function move(url) {
+           location.href = url;
+       }
+    </script>
+
+</HEAD>
+
+
+<BODY>
+    <marquee behavior="alternate" scrolldelay="100" direction="right">
+       수업에 대한 자유게시판
+    </marquee>
+    <table class="bbs" width="100%" height="200" border="2" bgcolor="D8D8D8">
+        <colgroup>
+            <col width="10%" />
+            <col width="45%" />
+            <col width="10%" />
+            <col width="15%" />
+            <col width="10%" />
+            <col width="10%" />
+        </colgroup>
+        <thread>
+            <tr>
+                <th>번 호</th>
+                <th>제 목</th>
+                <th>추 천</th>
+                <th>작성자</th>
+                <th>작성일</th>
+                <th>조 회</th>
+            </tr>
+        </thread>
+        <tbody>
+            <tr>
+                <td align="center">4</td>
+                <td><a href="View4.htm">교수님이 너무 잘가르쳐요</a></td>
+                <td align="center"> <b><font color="red">4</font> <font color="blue">0</font></b> </td>
+                <td align="center"> 서현석 </td>
+                <td align="center"> 2016/12/21 </td>
+                <td align="center"> 31 </td>
+            </tr>
+            <tr>
+                <td align="center">3</td>
+                <td><a href="View3.htm">알고리즘 수업에 관하여</a></td>
+                <td align="center"> <b><font color="red">41</font> <font color="blue">7</font></b> </td>
+                <td align="center"> 박진원 </td>
+                <td align="center"> 2016/12/21 </td>
+                <td align="center"> 221 </td>
+            </tr>
+            <tr>
+                <td align="center">2</td>
+                <td><a href="View2.htm">내공냠냠</a></td>
+                <td align="center"> <b><font color="red">0</font> <font color="blue">43</font></b> </td>
+                <td align="center"> 박동준 </td>
+                <td align="center"> 2016/12/20 </td>
+                <td align="center"> 64 </td>
+            </tr>
+            <tr>
+                <td align="center">1</td>
+                <td><a href="View1.htm">컴퓨터 공학도들의 필수 과목입니다</a></td>
+                <td align="center"> <b><font color="red">22</font> <font color="blue">1</font></b> </td>
+                <td align="center"> 서인국 </td>
+                <td align="center"> 2016/12/19 </td>
+                <td align="center"> 172 </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td align="center" colspan="6">1</td>
+            </tr>
+        </tfoot>
+
+    </table>
+    <input type="button" value="처음으로" onclick="move('main.htm')" />
+    <input type="button" value="글쓰기" onclick="move('writing.htm')" />
+
+
+</BODY>
+
+</HTML>

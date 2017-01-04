@@ -1,0 +1,64 @@
+<html>
+<head>
+    <title>글 읽기</title>
+    <script type="text/javascript">
+        function move(url) {
+            location.href = url;
+        }
+        function boardViewCheck() {
+            var form = document.BoardViewForm;
+            return true;
+        }
+    </script>
+</head>
+
+<body>
+    <form name="ViewForm" method="post">
+        <table summary="전체 테이블 구성" width="100%" height="200">
+            <tr>
+                <td><div align="center"><h3><b>글 읽기</b></h3></div></td>
+            </tr>
+            <tr>
+                <td colspan=2>
+                    <table border="1" summary="목록 테이블 구성" wdith="100%" height="200">
+                        <tr>
+                            <td align=center bgcolor=#dddddd width="15%"> 작성자</td>
+                            <td bgcolor=#ffffe8 width="50%">서인국</td>
+                            <td align=center bgcolor=#dddddd width="15%"> 작성일</td>
+                            <td bgcolor=#ffffe8 width="50%">2016/12/19</td>
+                        </tr>
+                        <tr>
+                            <td align=center bgcolor=#dddddd width="15%"> E-mail </td>
+                            <td bgcolor=#ffffe8 width="50%">inguk920@naver.com</td>
+                            <td align=center bgcolor=#dddddd width="15%"> 홈페이지 </td>
+                            <td bgcolor=#ffffe8 width="50%"><a href="http://www.daum.net" target="_new">http://www.daum.net</a></td>
+                        </tr>
+                        <tr>
+                            <td align=center bgcolor=#dddddd> 제 목</td>
+                            <td bgcolor=#ffffe8 colspan=3> 컴퓨터 공학도들의 필수 과목입니다</td>
+                        </tr>
+                        <tr>
+                            <td colspan=4><br>기초부터 차근차근 가르쳐주시고 학점도 후하게 줘요! 팀플이 있다는게 약간의 흠이지만 전 좋은 팀 만나고 좋은 교수님도 만나고 정말 좋았습니다 ^^ 정말 추천해요~~<br></td>
+                        </tr>
+                        <tr>
+                            <td colspan=4 align=right> <b><font color="red">22</font> <font color="blue">1</font></b> 조회수  : 172</td>
+                        </tr>
+                    </table>
+            </td>
+            </tr>
+            <tr>
+                <td align=center colspan=2>
+                    <hr size=1>
+                    <div align="center">
+                        [ <input type="button" value="목록" onclick="move('main.htm');"> |
+                        <input type="button" value="수정" onclick="move('update.htm');"> |
+                        <input type="button" value="답변" onclick="move('reply.htm');"> |
+                        <input type="button" value="삭제" onclick="move('delete.htm');">]<br>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>
